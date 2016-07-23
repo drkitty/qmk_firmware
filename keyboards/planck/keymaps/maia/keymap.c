@@ -85,8 +85,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       KC_6   , KC_7   , KC_8   , KC_9   , KC_0   , XXXXXXX,
     },
     {
-      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+      XXXXXXX, KC_F1  , KC_F2  , KC_F3  , KC_F4  , KC_F5  ,
+      KC_F6  , KC_F7  , KC_F8  , KC_F9  , KC_F10 , XXXXXXX,
     },
     {
       _______, XXXXXXX, _______, _______, _______, _______,
@@ -132,11 +132,3 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     },
   },
 };
-
-
-/*
- *void action_function(keyrecord_t *event, uint8_t id, uint8_t opt) {
- *  layer_move(0);
- *  layer_on((opt << 8) | id);
- *}
- */
