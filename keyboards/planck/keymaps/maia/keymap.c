@@ -11,6 +11,7 @@ enum {
     Q_L,
     W_L,
     NUM,
+    EXT,
     NAV,
 };
 
@@ -124,23 +125,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       KC_6   , KC_7   , KC_8   , KC_9   , KC_0   , KC_ESC ,
     },
     {
-      _______, KC_GRV , KC_TILD, KC_LPRN, KC_RPRN, KC_LCBR,
+      _______, KC_BSLS, KC_PIPE, KC_LPRN, KC_RPRN, KC_LCBR,
       KC_RCBR, KC_LBRC, KC_RBRC, KC_UNDS, KC_PLUS, _______,
     },
     {
       _______, XXXXXXX, _______, _______, _______, _______,
-      _______, _______, _______, _______, XXXXXXX, XXXXXXX,
+      _______, _______, _______, _______, XXXXXXX, _______,
     },
   },
 
   [NAV] = {
     {
-      _______, DF(Q_W), DF(W_W), DF(Q_L), DF(W_L), XXXXXXX,
-      XXXXXXX, KC_HOME, KC_PGDN, KC_PGUP, KC_END , _______,
+      _______, KC_GRV , KC_TILD, XXXXXXX, XXXXXXX, DF(Q_W),
+      DF(W_W), KC_HOME, KC_PGDN, KC_PGUP, KC_END , _______,
     },
     {
-      _______, XXXXXXX, KC_MUTE, KC_VOLD, KC_VOLU, XXXXXXX,
-      XXXXXXX, KC_LEFT, KC_DOWN, KC_UP  , KC_RGHT, XXXXXXX,
+      _______, XXXXXXX, KC_MUTE, KC_VOLD, KC_VOLU, DF(Q_L),
+      DF(W_L), KC_LEFT, KC_DOWN, KC_UP  , KC_RGHT, XXXXXXX,
     },
     {
       _______, KC_F1  , KC_F2  , KC_F3  , KC_F4  , KC_F5  ,
