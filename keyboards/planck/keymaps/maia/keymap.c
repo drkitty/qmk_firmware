@@ -35,7 +35,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     },
     {
       _______, MO(NAV), KC_LALT, KC_LGUI, MO(NUM), KC_SPC ,
-      KC_BSPC, MO(NUM), KC_RGUI, KC_RALT, MO(NAV), XXXXXXX,
+      KC_BSPC, MO(NUM), KC_RGUI, KC_RALT, MO(NAV), KC_DEL ,
     },
   },
 
