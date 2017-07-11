@@ -7,7 +7,6 @@ extern keymap_config_t keymap_config;
 enum {
     NON = 0,
     Q_N,
-    W_N,
     SYM,
     EXT,
     NAV,
@@ -78,7 +77,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [NAV] = {
     {
       _______, KC_GRV , KC_TILD, KC_BSLS, KC_PIPE, DF(Q_N),
-      DF(W_N), KC_HOME, KC_PGDN, KC_PGUP, KC_END , _______,
+      DF(NON), KC_HOME, KC_PGDN, KC_PGUP, KC_END , _______,
     },
     {
       XXXXXXX, XXXXXXX, KC_MUTE, KC_VOLD, KC_VOLU, XXXXXXX,
