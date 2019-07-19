@@ -20,7 +20,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [NON] = {
     {
       KC_TAB , KC_Q   , KC_D   , KC_R   , KC_W   , KC_B   ,
-      KC_J   , KC_F   , KC_U   , KC_P   , KC_QUOT, KC_ENT ,
+      KC_J   , KC_F   , KC_U   , KC_P   , KC_SCLN, KC_ENT ,
     },
     {
       MO(SYM), KC_A   , KC_S   , KC_H   , KC_T   , KC_G   ,
@@ -28,7 +28,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     },
     {
       KC_LCTL, KC_Z   , KC_X   , KC_M   , KC_C   , KC_V   ,
-      KC_K   , KC_L   , KC_COMM, KC_DOT , KC_SCLN, KC_RCTL,
+      KC_K   , KC_L   , KC_COMM, KC_DOT , KC_QUOT, KC_RCTL,
     },
     {
       KC_ESC , MO(NAV), KC_LALT, KC_LGUI, KC_LSFT, KC_SPC ,
